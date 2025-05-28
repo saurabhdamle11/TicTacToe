@@ -31,15 +31,8 @@ This project is a simple, object-oriented implementation of the classic Tic Tac 
    java -cp bin tictactoe.ticTacToeDemo
    ```
 
-## Example Usage
 
-The demo (`ticTacToeDemo`) creates two players and plays a sequence of moves, printing the board after each move and announcing the winner or draw.
-
-## Customization
-
-- Change the board size by modifying the size parameter in the `Game` constructor.
-- Add more features or a user interface as needed.
 
 ## License
 
-MIT License (add your license here if needed).
+MIT License.

@@ -1,18 +1,45 @@
-## Getting Started
+# Tic Tac Toe Java Implementation
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project is a simple, object-oriented implementation of the classic Tic Tac Toe game in Java.
 
-## Folder Structure
+## Project Structure
 
-The workspace contains two folders by default, where:
+- `src/tictactoe/`: Contains all Java source files for the game.
+- `bin/tictactoe/`: Contains compiled `.class` files.
+- `lib/`: For external dependencies (currently unused).
+- `.vscode/`: VS Code settings.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Main Components
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- [`Game`](src/tictactoe/Game.java): Manages game state, player turns, and win/draw logic.
+- [`Board`](src/tictactoe/Board.java): Represents the game board and handles move placement and win checks.
+- [`Cell`](src/tictactoe/Cell.java): Represents a single cell on the board.
+- [`Player`](src/tictactoe/Player.java): Represents a player with a name and symbol.
+- [`Symbol`](src/tictactoe/Symbol.java): Enum for X, O, and EMPTY.
+- [`GameStatus`](src/tictactoe/GameStatus.java): Enum for game status (IN_PROGRESS, WIN, DRAW).
+- [`ticTacToeDemo`](src/tictactoe/ticTacToeDemo.java): Demo class with a sample game run.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## How to Run
 
-## Dependency Management
+1. **Compile the code:**
+   ```sh
+   javac -d bin src/tictactoe/*.java
+   ```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+2. **Run the demo:**
+   ```sh
+   java -cp bin tictactoe.ticTacToeDemo
+   ```
+
+## Example Usage
+
+The demo (`ticTacToeDemo`) creates two players and plays a sequence of moves, printing the board after each move and announcing the winner or draw.
+
+## Customization
+
+- Change the board size by modifying the size parameter in the `Game` constructor.
+- Add more features or a user interface as needed.
+
+## License
+
+MIT License (add your license here if needed).
